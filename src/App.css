@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.warper {
+  display: grid;
+  grid-template-rows: auto 100px;
+  grid-gap: 0ch;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: transparent;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-box {
+  border: 1px solid rgba(151, 151, 151, 0.47);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: transparent;
   color: white;
+  border-radius: 35px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.firstSvg {
+  background-image: url("./img/background.png");
+  top: 0;
+  left: 50px;
+  background-size: 250px;
+  background-repeat: no-repeat;
 }
+.second {
+  background-image: url("./img/background2.png");
+  bottom: 0;
+  background-position: 95% 100%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  background-size: 250px;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 2160px) {
+  .App {
+    text-align: center;
+    background-image: linear-gradient(to right, #1e294a, #0e1f62);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto 50px;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) {
+  .App {
+    text-align: center;
+    background-image: linear-gradient(to right, #1e294a, #0e1f62);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+
+    margin: auto;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 2159px) {
+  .App {
+    text-align: center;
+    background-image: linear-gradient(to right, #1e294a, #0e1f62);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+
+    margin: auto;
+  }
+}
+@media only screen and (min-device-width: 801px) and (max-device-width: 1023px) {
+  .App {
+    text-align: center;
+    background-image: linear-gradient(to right, #1e294a, #0e1f62);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+
+    margin: auto;
+  }
+}
+@media only screen and (min-device-width: 600px) and (max-device-width: 800px) {
+  .App {
+    text-align: center;
+    background-image: linear-gradient(to right, #1e294a, #0e1f62);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+
+    margin: auto;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 599px) {
+  .App {
+    text-align: center;
+    background-image: linear-gradient(to right, #1e294a, #0e1f62);
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto;
+
+    margin: auto;
+  }
+  .firstSvg {
+    display: none;
+  }
+  .second {
+    display: none;
   }
 }
